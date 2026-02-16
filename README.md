@@ -1,2 +1,4 @@
 # Live Demo Link : 
-https://squid-frontend.onrender.com
+Frontend : https://squid-frontend.onrender.com
+<br>
+Backend : https://squid-backend.onrender.com
