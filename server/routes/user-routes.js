@@ -17,8 +17,8 @@ routes.post('/me',ensureAuthenticated,fetchUser);
 routes.post('/sign-out', ensureAuthenticated, (req, res) => {
   res.clearCookie('token', {
     httpOnly: true,
-    secure: false,
-    sameSite: 'Lax',
+    secure: true,
+    sameSite: 'None',
   });
   return res.status(200).send({ message: "Logout Successfully", logout: true })
 

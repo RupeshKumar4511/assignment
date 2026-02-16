@@ -47,8 +47,8 @@ const signin = async (req, res) => {
 
         res.cookie("token", jwtToken, {
             httpOnly: true,
-            secure: false, 
-            sameSite: "Lax"
+            secure: true, 
+            sameSite: "None"
         });
 
         res.status(200).json({

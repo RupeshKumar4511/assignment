@@ -8,7 +8,7 @@ const cors = require('cors');
 require('dotenv').config();
 const port = process.env.PORT;
 
-app.use(cors({ origin: 'http://localhost:5173',credentials: true}));
+app.use(cors({ origin: 'https://squid-frontend.onrender.com',credentials: true}));
 
 
 
