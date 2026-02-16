@@ -1,5 +1,5 @@
 export const UserSignUp = async({username,email,password})=>{
-   const response = await fetch('http://localhost:10000/api/v1/signup',
+   const response = await fetch('https://squid-backend.onrender.com/api/v1/signup',
     {
         method:"POST",
         headers:{'Content-Type':'application/json'},
@@ -12,7 +12,7 @@ export const UserSignUp = async({username,email,password})=>{
 }
 
 export const UserLogin = async({username,password})=>{
-   const response = await fetch('http://localhost:10000/api/v1/signin',
+   const response = await fetch('https://squid-backend.onrender.com/api/v1/signin',
     {
         method:"POST",
         headers:{'Content-Type':'application/json'},
@@ -27,7 +27,7 @@ export const UserLogin = async({username,password})=>{
 
 
 export const signOut = async()=>{
-   const response = await fetch('http://localhost:10000/api/v1/sign-out',
+   const response = await fetch('https://squid-backend.onrender.com/api/v1/sign-out',
     {
         method:"POST",
         headers:{'Content-Type':'application/json'},
